@@ -1,55 +1,55 @@
-/* Design tokens (based on starter-paper). The only place values live. */
-@font-face{font-family:"Fraunces";src:url("fonts/fraunces-latin-wght-normal.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;}
+@font-face{font-family:"Space Grotesk";src:url("fonts/space-grotesk-latin-wght-normal.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;}
 @font-face{font-family:"Inter";src:url("fonts/inter-latin-wght-normal.woff2") format("woff2");font-weight:100 900;font-style:normal;font-display:swap;}
+/* Orange · design tokens. The only place values live. */
 :root{
   /* Colour */
-  --color-bg: #F5F1EA;
-  --color-surface: #ECE6DB;
-  --color-card: #FBF9F5;
-  --color-text: #1C1A16;
-  --color-heading: #14120F;
-  --color-muted: #5C564C;
-  --color-border: rgba(28,26,22,.14);
-  --color-border-strong: rgba(28,26,22,.45);
-  --color-accent: #B83A12;
-  --color-accent-hover: #9A2F0D;
+  --color-bg: #FFFAF6;
+  --color-surface: #FFF0E6;
+  --color-card: #FFFFFF;
+  --color-text: #1F1A17;
+  --color-heading: #14110F;
+  --color-muted: #5F5650;
+  --color-border: rgba(31,26,23,.12);
+  --color-border-strong: rgba(31,26,23,.45);
+  --color-accent: #C2410C;
+  --color-accent-hover: #9A3412;
   --color-accent-text: #FFFFFF;
-  --color-accent-strong: #A3330F;
-  --color-accent-soft: #F1DDD2;
-  --color-inverse-bg: #1C1A16;
-  --color-inverse-text: #F5F1EA;
-  --color-inverse-muted: #BDB5A8;
-  --color-inverse-border: rgba(245,241,234,.4);
-  --color-inverse-action: #B83A12;
-  --color-inverse-action-hover: #9A2F0D;
-  --color-inverse-action-text: #FFFFFF;
-  --color-nav-bg: rgba(245,241,234,.86);
-  --color-footer-bg: #ECE6DB;
-  --color-footer-text: #1C1A16;
-  --color-footer-border: rgba(28,26,22,.14);
-  --color-input-bg: #FBF9F5;
-  --color-focus: #B83A12;
+  --color-accent-strong: #B03A0A;
+  --color-accent-soft: #FFE4D1;
+  --color-inverse-bg: #1F1A17;
+  --color-inverse-text: #FFF8F3;
+  --color-inverse-muted: #C9BDB4;
+  --color-inverse-border: rgba(255,248,243,.4);
+  --color-inverse-action: #FB923C;
+  --color-inverse-action-hover: #FDBA74;
+  --color-inverse-action-text: #1F1A17;
+  --color-nav-bg: rgba(255,250,246,.86);
+  --color-footer-bg: #FFF0E6;
+  --color-footer-text: #1F1A17;
+  --color-footer-border: rgba(31,26,23,.12);
+  --color-input-bg: #FFFFFF;
+  --color-focus: #C2410C;
   --color-error: #B42318;
 
   /* Type */
-  --font-display: "Fraunces", Georgia, serif;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
   --font-label: "Inter", system-ui, sans-serif;
-  --weight-display: 400;
+  --weight-display: 700;
   --weight-button: 500;
-  --tracking-display: -0.02em;
-  --tracking-label: 0.08em;
-  --label-case: uppercase;
+  --tracking-display: -0.03em;
+  --tracking-label: 0.02em;
+  --label-case: none;
   --leading-display: 1.05;
 
   /* Shape */
-  --radius-button: 0;
-  --radius-card: 0;
-  --radius-input: 0;
-  --radius-pill: 0;
-  --radius-mark: 0;
-  --radius-bullet: 0;
-  --shadow-card: none;
+  --radius-button: 999px;
+  --radius-card: 16px;
+  --radius-input: 12px;
+  --radius-pill: 999px;
+  --radius-mark: 12px;
+  --radius-bullet: 999px;
+  --shadow-card: 0 8px 24px rgba(31,26,23,.08);
 
   /* Spacing scale */
   --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 24px;
@@ -73,6 +73,25 @@
   /* Lines */
   --border-width: 1px;
   --border-width-strong: 2px;
+
+  /* Sizes and ratios */
+  --size-tap: 48px;
+  --size-tap-min: 44px;
+  --size-input: 52px;
+  --size-textarea: 160px;
+  --size-mark: 22px;
+  --size-icon: 40px;
+  --nav-height: 72px;
+  --measure: 60ch;
+  --toc-width: 16rem;
+  --date-width: 9rem;
+  --portrait-max: 24rem;
+  --ratio-portrait: 4/5;
+  --ratio-media: 16/9;
+  --width-section-head: 44rem;
+  --width-page-hero: 48rem;
+  --width-quote: 52rem;
+  --text-brand: 1.35rem;
 
   /* Motion */
   --motion-fast: .18s;

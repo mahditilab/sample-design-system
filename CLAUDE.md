@@ -16,7 +16,28 @@ A personal website for a senior Java developer working at KFZTeile, where he pub
 Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify, connected to the website repository. The contact form uses Netlify Forms.
 
 ## Pages
-`index.html` (home) · `about.html` · `contact.html` · `thanks.html` (after the form). Posts are added as pages built from the design system; their page patterns are not defined yet and need a decision in Claude chat first.
+`index.html` (home) · `blog.html` (list of posts) · `about.html` · `contact.html` · `thanks.html` (after the form). Prototypes exist for `home.html`, `blog.html` and `post.html`; the website pages are built from them. Each post is its own page built from `prototypes/post.html`. Code blocks inside posts are not defined yet: they need a decision in Claude chat first (monospace font, colours).
+
+## Design inspiration
+Three developer and designer portfolio templates were shared as references. They are inspiration only: no decision below is final until it is confirmed in Claude chat and recorded in the design system. The look is Orange (chosen): friendly and bold, Space Grotesk headlines, Inter text, orange accent, pill buttons, rounded cards. Do not copy their illustrations, photos, logos or exact layouts.
+
+What we take from them:
+- **Home page order:** hero with name, role and one line about what I write, plus two buttons (read the blog, get in touch) · latest posts (three cards, link to all posts) · short about with a few traits · technologies strip · experience as a short timeline · how I work as steps · closing call to action with contact details.
+- **Tone:** personal and direct ("Hi, I'm ..."), quiet confidence, plenty of white space.
+- **Newsletter:** a small "get new posts" sign-up near the footer (from the second template).
+
+What we leave out: invented numbers (projects, clients, support hours), skill percentage bars, carousels, testimonials unless real and approved, stock or generated photos of other people.
+
+Images (added): the home hero is split, text left and a portrait right (`hero__grid`, `portrait`); latest-post cards and post pages carry a 16:9 image (`card__media`, `cover`). Files are in `assets/images/`. The portrait and the `sample-*.svg` images are placeholders; the real photo of Mahdi must be supplied.
+
+Look: Orange is the chosen look and lives in `assets/tokens.css` and `storybook.html`. Rust (`assets/tokens-rust.css`, `storybook-rust.html`) and Sage (`assets/tokens-sage.css`, `storybook-sage.html`) are kept as unused variants. Changing the look again is a decision for Claude chat.
+
+Not defined in the design system yet, so each needs a decision in Claude chat before anyone builds it:
+- Technologies strip or tile grid
+- Experience timeline
+- Newsletter sign-up
+- Tag chips for post topics
+- Code blocks inside posts (monospace font, colours)
 
 ## How we work: the loop
 1. Design in Claude chat: prototype the page, try versions, check phone and desktop.
@@ -34,4 +55,5 @@ Plain HTML, CSS and a little JavaScript. No build step. Hosted on Netlify, conne
 - After building, run the site locally, test phone and desktop, and report what you built, what you tested and every open question, before opening a pull request.
 
 ## Current state
-[What's done, what's next. Update this at the end of each session.]
+Done: design system based on starter-paper (tokens, components, storybook, SKILL.md), blog index and post prototypes, a Design System artifact in Claude. Not done: nothing is pushed to GitHub yet (the GitHub connector is off for the organisation), no website pages are built, the sample prototypes still use placeholder text and "Mahdi Tilab".
+Next: confirm the home page order above, decide the undefined components, prototype `home.html` in Claude chat, then push the design system.

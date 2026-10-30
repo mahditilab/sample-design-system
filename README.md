@@ -1,6 +1,6 @@
 # sample-design-system
 
-A design system based on `starter-paper`: editorial, calm, confident. Fraunces for display, Inter for text, warm paper background, one rust accent, square corners.
+A design system built on the `starter-paper` structure, in the Orange look: friendly and bold. Space Grotesk for display, Inter for text, warm white background, one orange accent, pill buttons and rounded cards. Rust (the original paper look) and Sage are kept as variants: `storybook-rust.html`, `storybook-sage.html`.
 
 | File | What it is |
 |---|---|
